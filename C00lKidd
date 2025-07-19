@@ -1,4 +1,4 @@
---// Txeen - Noclip GUI (Kırmızı & Genişletilmiş) //-- 
+
 
 local player = game.Players.LocalPlayer
 local noclipEnabled = false
@@ -6,7 +6,7 @@ local coreGui = game:GetService("CoreGui")
 local screenGui = Instance.new("ScreenGui", coreGui)
 screenGui.Name = "TxeenNoclipGui"
 
--- Büyük ve dikey menü
+
 local mainFrame = Instance.new("Frame", screenGui)
 mainFrame.Size = UDim2.new(0, 160, 0, 70) -- Yükseklik arttırıldı
 mainFrame.Position = UDim2.new(0.5, -80, 0.1, 0)
@@ -17,7 +17,7 @@ mainFrame.Active = true
 mainFrame.Draggable = true
 mainFrame.BackgroundTransparency = 0.05
 
--- Başlık
+
 local title = Instance.new("TextLabel", mainFrame)
 title.Size = UDim2.new(1, 0, 0.4, 0)
 title.Text = "Txeen - noclip"
@@ -26,7 +26,7 @@ title.TextColor3 = Color3.fromRGB(255, 255, 255)
 title.Font = Enum.Font.FredokaOne
 title.TextSize = 16
 
--- Toggle Buton
+
 local toggleButton = Instance.new("TextButton", mainFrame)
 toggleButton.Position = UDim2.new(0.5, -35, 0.6, 0) -- Biraz aşağı alındı
 toggleButton.Size = UDim2.new(0, 70, 0, 25) -- Buton büyütüldü
@@ -36,7 +36,7 @@ toggleButton.TextColor3 = Color3.fromRGB(30, 30, 30)
 toggleButton.Font = Enum.Font.SourceSansBold
 toggleButton.TextSize = 14
 
--- Noclip Mekanizması
+
 local RunService = game:GetService("RunService")
 local noclipLoop
 
